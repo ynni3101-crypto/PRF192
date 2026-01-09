@@ -1,0 +1,29 @@
+# ===== File th?c thi (Windows / Linux) =====
+*.exe
+*.out
+*.app
+
+# ===== File object (k?t qu? biên d?ch) =====
+*.o
+*.obj
+
+# ===== File debug / log =====
+*.log
+
+# ===== Thý m?c build =====
+build/
+bin/
+dist/
+
+# ===== File h? ði?u hành =====
+.DS_Store
+Thumbs.db
+
+# ===== File IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== File t?m =====
+*.tmp
+*.bak
