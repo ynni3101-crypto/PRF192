@@ -6,8 +6,8 @@ in kq a+b=...*/
 
 int main(){
 	float a=5,b=10.216,kq;
-	printf("a=%f\nb=%.3f\n",a,b);
+	printf("a=%.0f\nb=%.3f\n",a,b);
 	kq=a+b;
-	printf("%f+%.3f=%.2f",a,b,kq);
+	printf("%.0f+%.3f=%.2f",a,b,kq);
 	return 0;	
 }
