@@ -1,4 +1,7 @@
 #include<stdio.h>
 int main(){
-	printf("a=10");
+	int a;
+	printf("Nhap so a= ");
+	scanf("%d",&a);
+	printf("a=%d",a);
 }
