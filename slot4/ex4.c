@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(){
+int main() {
 	int a,b;
 	char pt;
 	printf("Nhap a,b: ");
@@ -7,14 +7,15 @@ int main(){
 	printf("Nhap phep toan: ");
 	fflush(stdin);
 	scanf("%c",&pt);
-	if(pt=='/'){
+	if(pt=='/') {
 		if(b==0)
-			printf("Khong the chia cho 0.");	
-		else{
+			printf("Khong the chia cho 0.");
+		else {
 			float kq=(float)a/b;
-			printf("Ket qua: %d%c%d=%.2f",a,pt,b,kq);}
-	}
-	else
+			printf("Ket qua: %d%c%d=%.2f",a,pt,b,kq);
+		}
+	} else
 		printf("Khong phai phep chia.");
+
 	return 0;
 }
