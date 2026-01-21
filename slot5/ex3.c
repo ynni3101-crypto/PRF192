@@ -11,6 +11,6 @@ int main(){
 		else
 			max=c;
 	}
-	printf("So lown nhat la %.2f",max);
+	printf("So lon nhat la %.2f",max);
 	return 0;
 }
