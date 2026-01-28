@@ -25,6 +25,9 @@ int main(){
 	else
 		xeploai='F';
 	printf("Xep loai: %c\n",xeploai);
+	printf("\n");
+	printf("%-10s|%-10s|%-10s|%-10s\n","Diem chuyen can","Diem giua ki","Diem cuoi ki","Diem tong ket");
+	printf("%-10.2f|%-10.2f|%-10.2f|%-10.2f\n",diemCK,diemGK,diemCK,diemTK);
 	if(diemCC>=4.0&&diemGK>=4.0&&diemCK>=4.0&&xeploai!='F')
 		printf("Ban du dieu kien Tot Nghiep.");
 	else 
