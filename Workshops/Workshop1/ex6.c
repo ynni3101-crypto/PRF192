@@ -24,13 +24,14 @@ int main(){
 		xeploai='D';
 	else
 		xeploai='F';
-	printf("Xep loai: %c\n",xeploai);
+	printf("--> Xep loai: %c\n",xeploai);
 	printf("\n");
-	printf("%-10s|%-10s|%-10s|%-10s\n","Diem chuyen can","Diem giua ki","Diem cuoi ki","Diem tong ket");
-	printf("%-10.2f|%-10.2f|%-10.2f|%-10.2f\n",diemCK,diemGK,diemCK,diemTK);
+	printf("%-20s|%-20s|%-20s|%-20s\n","Diem chuyen can","Diem giua ki","Diem cuoi ki","Diem tong ket");
+	printf("%-20.2f|%-20.2f|%-20.2f|%-20.2f\n",diemCK,diemGK,diemCK,diemTK);
+	printf("\n");
 	if(diemCC>=4.0&&diemGK>=4.0&&diemCK>=4.0&&xeploai!='F')
-		printf("Ban du dieu kien Tot Nghiep.");
+		printf("Ban du dieu kien Tot Nghiep.\n");
 	else 
-		printf("Ban khong du dieu kien Tot Nghiep.");
+		printf("Ban khong du dieu kien Tot Nghiep.\n");
 	return 0;
 }
