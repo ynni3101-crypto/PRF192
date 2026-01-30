@@ -4,15 +4,16 @@
 5.5-6.9 C
 4-5.4 D
 <4 F */
-int main(){
+int main() {
 	float diemCC,diemGK,diemCK,diemTK;
-	char xeploai;	
-	printf("Nhap diem chuyen can: ");
-	scanf("%f",&diemCC);
-	printf("Nhap diem Giua Ki: ");
-	scanf("%f",&diemGK);
-	printf("Nhap diem Cuoi Ki: ");
-	scanf("%f",&diemCK);
+	char xeploai;
+nhaplai:
+	printf("Nhap diem chuyen can, giua ki, cuoi ki: ");
+	int kq=scanf("%f%f%f",&diemCC,&diemGK,&diemCK);
+	if(kq!=3||diemCC<0||diemCC>10||diemGK<0||diemGK>10||diemCK<0||diemCK>10) { 
+		printf("Nhap sai. Vui long nhap lai!!!\n\n");
+		goto nhaplai;
+	}
 	diemTK=diemCC*0.1+diemGK*0.3+diemCK*0.6;
 	if(diemTK>=8.5&&diemTK<=10)
 		xeploai='A';
@@ -30,8 +31,8 @@ int main(){
 	printf("%-20.2f|%-20.2f|%-20.2f|%-20.2f\n",diemCK,diemGK,diemCK,diemTK);
 	printf("\n");
 	if(diemCC>=4.0&&diemGK>=4.0&&diemCK>=4.0&&xeploai!='F')
-		printf("Ban du dieu kien Tot Nghiep.\n");
-	else 
-		printf("Ban khong du dieu kien Tot Nghiep.\n");
+		printf("Ban DU dieu kien Tot Nghiep.\n");
+	else
+		printf("Ban KHONG DU dieu kien Tot Nghiep.\n");
 	return 0;
 }

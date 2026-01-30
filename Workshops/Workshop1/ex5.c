@@ -1,29 +1,30 @@
 #include <stdio.h>
 int main() {
-	float s,p;
-	int w;
+	float soKm,giaTien;
+	int soPhutcho;
 	printf("Quang duong di duoc (km): ");
-	int kq=scanf("%f",&s);
-	if(kq=0||s<=0) {
-		printf("Nhapsai");
+	int kq=scanf("%f",&soKm);
+	if(kq=0||soKm<=0) {
+		printf("Nhap sai!");
 		return 0;
 	}
-	if(s<0.5)
-		p=12.000;
-	else if(0.5<=s&&s<=30)
-		p=12.000 + 15.000*(s-0.5);
-	else if(s>=31)
-		p=12.000+15.000*29.5+12.000*(s-30);
+	if(soKm<0.5)
+		giaTien=12.000;
+	else 
+		if(0.5<=soKm&&soKm<=30)
+			giaTien=12.000 + 15.000*(soKm-0.5);
+		else
+			giaTien=12.000+15.000*29.5+12.000*(soKm-30);
 	printf("Thoi gian cho (phut): ");
-	kq=scanf("%d",&w);
-	if(kq=0||w<0) {
-		printf ("Nhapsai.");
+	kq=scanf("%d",&soPhutcho);
+	if(kq=0||soPhutcho<0) {
+		printf ("Nhap sai!");
 		return 0;
 	}
-	if(w>5)
-		p+=1.000*(w-5);
+	if(soPhutcho>5)
+		soPhutcho+=1.000*(soPhutcho-5);
 	printf("%-15s|%-15s|%-15s\n","So km","So phut cho","Tong tien");
-	printf("%-15.2f|%-15d|%-15.3f\n",s,w,p);
+	printf("%-15.2f|%-15d|%-15.3f\n",soKm,soPhutcho,giaTien);
 	return 0;
 
 }
