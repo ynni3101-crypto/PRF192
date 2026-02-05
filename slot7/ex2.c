@@ -34,5 +34,5 @@ int main(){
 			break;
 	}
 	printf("%d %c %d = %.0f",a,pheptoan,b,kq);
-	
+	return 0;
 }
